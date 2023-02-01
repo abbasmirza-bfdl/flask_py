@@ -2,7 +2,7 @@ from flask import Flask, render_template, session, redirect, url_for, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField,BooleanField,DateTimeField,RadioField,SelectField,TextAreaField, IntegerField
 from wtforms.validators import DataRequired
-import templates.petshop.petregdb as dbc
+import petshop.petregdb as dbc
 
 app=Flask(__name__)
 app.config['SECRET_KEY']='mysecretkey'
