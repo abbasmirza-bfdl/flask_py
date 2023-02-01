@@ -9,11 +9,11 @@
 <body>
     <h1>Find all pet details on Pet's Place</h1>
     {% for i in petdetails %}
-    {{ i }}
+    {{ i }}<br>
     {% endfor %}
     <p>Delete your pet detail here:</p>
-    <button action="">Delete</button>
+    <a href="{{url_for('pet_delete')}}">Delete</a>
     <p>Update your pet details here:</p>
-    <button action='{{url_for("pet_update")}}'>Update</button>
+    <a href="{{url_for('pet_update')}}">Update</a>
 </body>
 </html>
